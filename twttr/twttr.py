@@ -1,7 +1,2 @@
-input_string = input("input please\n")
-output_string = ""
-
-for i in input_string:
-    if i.lower() != 'a' and i.lower() != 'e' and i.lower() != 'i' and i.lower() != 'o' and i.lower() != 'u':
-        output_string += i
-print(output_string)
+print(input("input please\n").replace('a', '').replace('e', '').replace('i', '').replace('o', '').replace('u', '').replace('A', '').replace('E', '').replace('I', '').replace('O', '').replace('U', ''))
+# replaces 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O' and 'U' with '' and then prints the string
