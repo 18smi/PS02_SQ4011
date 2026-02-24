@@ -22,9 +22,9 @@ def is_valid(s):
         if i.isdigit():
             if s[i] == '0':# if first number is a 0 return False
                 return False
-            if not s[i:].isdigit():# if there are non digits after the first return False
-                return False
-            return True# if the rest of the string is digits return True
+            return not s[i:].isdigit()
+            # if there are non digits after the first return False else return True
+                
 
     return True# if no fail conditions are found return True
     
